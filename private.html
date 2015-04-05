@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <script>
+	var total = function(){
+		var privateNum = 5;
+		function change(val){
+			privateNum += val;
+		}
+
+		return{
+			incre:function(){
+				change(1);
+			},
+			decre:function(){
+				change(-1);
+			},
+			addten:function(){
+				change(10);
+			},
+			show:function(){
+				return privateNum;
+			}
+		}
+	}();
+
+	alert(total.show());
+	total.incre();
+	alert(total.show());
+	total.decre();
+	alert(total.show());
+	total.addten();
+	alert(total.show());
+
+
+	
+ </script>
+<body>
+  
+ </body>
+</html>

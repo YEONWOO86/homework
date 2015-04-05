@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+
+ <script>
+	var favorite = function(a){
+		
+		return function(b){
+			
+			var result = a+'dan...'+a+'*'+b+'='+(a*b)+'<br>';
+			
+			
+
+			return result;
+		};
+	};
+
+	var dan2 = favorite(2);
+	var dan9 = favorite(9);
+	document.write(dan2(4));
+	document.write(dan2(5));
+	document.write(dan9(8));
+	document.write(dan9(7));
+
+
+ </script>
+ <body>
+  
+ </body>
+</html>
